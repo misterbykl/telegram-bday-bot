@@ -38,7 +38,25 @@ public class TelegramBdayBotHandler extends TelegramLongPollingBot {
         } else if ("/dg_seda".equals(message.getText())) {
             replyText = BDayList.SEDA;
         } else if ("/dg_ersen".equals(message.getText())) {
-            replyText = BDayList.SEDA;
+            replyText = BDayList.ERSEN;
+        } else if ("/dg_basak".equals(message.getText())) {
+            replyText = BDayList.BASAK;
+        } else if ("/dg_murat".equals(message.getText())) {
+            replyText = BDayList.MURAT;
+        } else if ("/dg_senem".equals(message.getText())) {
+            replyText = BDayList.SENEM;
+        } else if ("/dg_isil".equals(message.getText())) {
+            replyText = BDayList.ISIL;
+        } else if ("/dg_caglar".equals(message.getText())) {
+            replyText = BDayList.CAGLAR;
+        } else if ("/dg_begum".equals(message.getText())) {
+            replyText = BDayList.BEGUM;
+        } else if ("/dg_suhan".equals(message.getText())) {
+            replyText = BDayList.SUHAN;
+        } else if ("/dg_sinan".equals(message.getText())) {
+            replyText = BDayList.SINAN;
+        } else if ("/dg_mert".equals(message.getText())) {
+            replyText = BDayList.MERT;
         }
 
         sendMessage.setText(replyText);

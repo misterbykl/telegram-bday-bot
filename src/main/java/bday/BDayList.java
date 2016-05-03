@@ -14,6 +14,6 @@ public class BDayList {
     public static final String CAGLAR = "4 Kasım";
     public static final String BEGUM = "8 Nisan";
     public static final String SUHAN = "25 Kasım";
-    public static final String SINAN = "30 Mayıs";
-    public static final String MERT = "30 Mayıs";
+    public static final String SINAN = "30 Haziran";
+    public static final String MERT = "20 Temmuz";
 }

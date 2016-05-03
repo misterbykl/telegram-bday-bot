@@ -1,3 +1,5 @@
+package bday;
+
 import org.telegram.telegrambots.TelegramApiException;
 import org.telegram.telegrambots.api.methods.SendMessage;
 import org.telegram.telegrambots.api.objects.Message;
@@ -5,10 +7,9 @@ import org.telegram.telegrambots.api.objects.Update;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 
 import java.io.InvalidObjectException;
-import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * TelegramBdayBotHandler.java
+ * bday.TelegramBdayBotHandler.java
  * <p>
  * <b>created at</b> 29 Mar 2016 14 07
  *

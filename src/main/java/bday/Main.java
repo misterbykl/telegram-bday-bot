@@ -1,8 +1,10 @@
+package bday;
+
 import org.telegram.telegrambots.TelegramApiException;
 import org.telegram.telegrambots.TelegramBotsApi;
 
 /**
- * Main.java
+ * bday.Main.java
  * <p>
  * <b>created at</b> 29 Mar 2016 13 37
  *

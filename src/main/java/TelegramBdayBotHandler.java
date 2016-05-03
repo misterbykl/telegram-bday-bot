@@ -36,6 +36,8 @@ public class TelegramBdayBotHandler extends TelegramLongPollingBot {
             replyText = BDayList.EMRE;
         } else if ("/dg_seda".equals(message.getText())) {
             replyText = BDayList.SEDA;
+        } else if ("/dg_ersen".equals(message.getText())) {
+            replyText = BDayList.SEDA;
         }
 
         sendMessage.setText(replyText);

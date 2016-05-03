@@ -4,4 +4,5 @@
 public class BDayList {
     public static final String EMRE = "14 Temmuz";
     public static final String SEDA = "28 Eylül";
+    public static final String ERSEN = "10 Ağustos";
 }

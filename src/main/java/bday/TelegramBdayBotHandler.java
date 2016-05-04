@@ -33,29 +33,29 @@ public class TelegramBdayBotHandler extends TelegramLongPollingBot {
 
         String replyText = null;
 
-        if ("/dg_emre".equals(message.getText())) {
+        if ("/emredg".equals(message.getText())) {
             replyText = BDayList.EMRE;
-        } else if ("/dg_seda".equals(message.getText())) {
+        } else if ("/sedadg".equals(message.getText())) {
             replyText = BDayList.SEDA;
-        } else if ("/dg_ersen".equals(message.getText())) {
+        } else if ("/ersendg".equals(message.getText())) {
             replyText = BDayList.ERSEN;
-        } else if ("/dg_basak".equals(message.getText())) {
+        } else if ("/basakdg".equals(message.getText())) {
             replyText = BDayList.BASAK;
-        } else if ("/dg_murat".equals(message.getText())) {
+        } else if ("/muratdg".equals(message.getText())) {
             replyText = BDayList.MURAT;
-        } else if ("/dg_senem".equals(message.getText())) {
+        } else if ("/senemdg".equals(message.getText())) {
             replyText = BDayList.SENEM;
-        } else if ("/dg_isil".equals(message.getText())) {
+        } else if ("/isildg".equals(message.getText())) {
             replyText = BDayList.ISIL;
-        } else if ("/dg_caglar".equals(message.getText())) {
+        } else if ("/caglardg".equals(message.getText())) {
             replyText = BDayList.CAGLAR;
-        } else if ("/dg_begum".equals(message.getText())) {
+        } else if ("/begumdg".equals(message.getText())) {
             replyText = BDayList.BEGUM;
-        } else if ("/dg_suhan".equals(message.getText())) {
+        } else if ("/suhandg".equals(message.getText())) {
             replyText = BDayList.SUHAN;
-        } else if ("/dg_sinan".equals(message.getText())) {
+        } else if ("/sinandg".equals(message.getText())) {
             replyText = BDayList.SINAN;
-        } else if ("/dg_mert".equals(message.getText())) {
+        } else if ("/mertdg".equals(message.getText())) {
             replyText = BDayList.MERT;
         }
 

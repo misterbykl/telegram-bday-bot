@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 case $1 in
-	start)
+	    start)
         	    echo "Telegram bday bot is starting..."
                 nohup target/telegram-bday-bot  1>/srv/telegram-bday-bot/InfoLog.log 2>/srv/telegram-bday-bot/ErrorLog.log &
                 echo $! > BDay.pid

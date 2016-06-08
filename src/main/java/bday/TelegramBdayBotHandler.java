@@ -30,6 +30,13 @@ public class TelegramBdayBotHandler extends TelegramLongPollingBot {
     private final String HAPPY_BDAY = ". İyiki doğdun :)";
     private List<String> config;
 
+    /**
+     *
+     * @param argTelegramConfig
+     *
+     * @author misterbykl
+     * @since 1.0.0
+     */
     public TelegramBdayBotHandler(List<String> argTelegramConfig) {
         this.INEK_OBASI_BOT = argTelegramConfig.get(0);
         this.TOKEN_INEK_OBASI_BOT = argTelegramConfig.get(1);
@@ -39,6 +46,9 @@ public class TelegramBdayBotHandler extends TelegramLongPollingBot {
      *
      * @param argMessage
      * @return
+     *
+     * @author misterbykl
+     * @since 1.0.0
      */
     private SendMessage getMessage(Message argMessage) {
         System.out.println(
@@ -57,6 +67,7 @@ public class TelegramBdayBotHandler extends TelegramLongPollingBot {
     /**
      * @param argMessage
      * @return
+     *
      * @author misterbykl
      * @since 1.0.0
      */
@@ -93,6 +104,7 @@ public class TelegramBdayBotHandler extends TelegramLongPollingBot {
 
     /**
      * @param argUpdate
+     *
      * @author misterbykl
      * @since 1.0.0
      */
@@ -109,6 +121,7 @@ public class TelegramBdayBotHandler extends TelegramLongPollingBot {
 
     /**
      * @return
+     *
      * @author misterbykl
      * @since 1.0.0
      */
@@ -119,6 +132,7 @@ public class TelegramBdayBotHandler extends TelegramLongPollingBot {
 
     /**
      * @return
+     *
      * @author misterbykl
      * @since 1.0.0
      */
@@ -129,6 +143,7 @@ public class TelegramBdayBotHandler extends TelegramLongPollingBot {
     /**
      * @param argMessage
      * @throws InvalidObjectException
+     *
      * @author misterbykl
      * @since 1.0.0
      */

@@ -22,6 +22,7 @@ public class DGList {
      * @param argKisiList
      * @param argDgList
      * @param argDgtList
+     *
      * @author misterbykl
      * @since 1.0.0
      */
@@ -40,6 +41,7 @@ public class DGList {
 
     /**
      * @author misterbykl
+     *
      * @since 1.0.0
      */
     public static void setDateFormat() {
@@ -49,6 +51,7 @@ public class DGList {
     /**
      * @return
      * @author misterbykl
+     *
      * @since 1.0.0
      */
     public static Map<String, String> getDgListesi() {
@@ -57,6 +60,7 @@ public class DGList {
 
     /**
      * @param argDgListesi
+     *
      * @author misterbykl
      * @since 1.0.0
      */
@@ -66,6 +70,7 @@ public class DGList {
 
     /**
      * @return
+     *
      * @author misterbykl
      * @since 1.0.0
      */
@@ -75,6 +80,7 @@ public class DGList {
 
     /**
      * @param argDgtListesi
+     *
      * @author misterbykl
      * @since 1.0.0
      */
@@ -85,6 +91,7 @@ public class DGList {
     /**
      * @return
      * @author misterbykl
+     *
      * @since 1.0.0
      */
     public static List<String> getKisiListesi() {
@@ -93,6 +100,7 @@ public class DGList {
 
     /**
      * @param argKisiListesi
+     *
      * @author misterbykl
      * @since 1.0.0
      */
@@ -103,6 +111,7 @@ public class DGList {
     /**
      * @return
      * @author misterbykl
+     *
      * @since 1.0.0
      */
     public static DateTimeFormatter getDateFormat() {

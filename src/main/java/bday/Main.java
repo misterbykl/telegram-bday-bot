@@ -23,18 +23,22 @@ import java.util.Properties;
 public class Main {
     public static void main(String[] args) throws ParseException, IOException {
 
-        Properties properties = new Properties();
-        properties.load(new FileReader(new File("./conf/dg.txt")));
-        List<String> kisiList = Arrays.asList(properties.get("kisi").toString().split(","));
-        List<String> dgList = Arrays.asList(properties.get("dg").toString().split(","));
-        List<String> dgtList = Arrays.asList(properties.get("dgt").toString().split(","));
+        Properties dgProperties = new Properties();
+        dgProperties.load(new FileReader(new File("./conf/dg.txt")));
+        List<String> kisiList = Arrays.asList(dgProperties.get("kisi").toString().split(","));
+        List<String> dgList = Arrays.asList(dgProperties.get("dg").toString().split(","));
+        List<String> dgtList = Arrays.asList(dgProperties.get("dgt").toString().split(","));
+
+        Properties telegramConfigProperties = new Properties();
+        telegramConfigProperties.load(new FileReader(new File("./conf/config.txt")));
+        List<String> telegramConfig = Arrays.asList(telegramConfigProperties.get("bot.info").toString().split(","));
 
         DGList.setDates(kisiList, dgList, dgtList);
         DGList.setDateFormat();
 
         TelegramBotsApi telegramBotsApi = new TelegramBotsApi();
         try {
-            telegramBotsApi.registerBot(new TelegramBdayBotHandler());
+            telegramBotsApi.registerBot(new TelegramBdayBotHandler(telegramConfig));
         } catch (TelegramApiException argE) {
             argE.printStackTrace();
         }

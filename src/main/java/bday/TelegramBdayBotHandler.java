@@ -22,14 +22,25 @@ import java.util.Map;
 
 public class TelegramBdayBotHandler extends TelegramLongPollingBot {
 
-    public static final String INEK_OBASI_BOT = "InekObasiBot";
-    public static final String TOKEN_INEK_OBASI_BOT = "211293657:AAGumQvPrPMqpvdP-0I5BluEjDzxHP0IL48";
-    public static final String DG_QUERY_HEADER = "/dg";
-    public static final String DG_TODAY = "/dgbugun";
-    public static final String DG_NOT_TODAY = "Bugün kimsenin doğum günü değil :(";
-    public static final String HAPPY_BDAY = ". İyiki doğdun :)";
+    private String INEK_OBASI_BOT;
+    private String TOKEN_INEK_OBASI_BOT;
+    private final String DG_QUERY_HEADER = "/dg";
+    private final String DG_TODAY = "/dgbugun";
+    private final String DG_NOT_TODAY = "Bugün kimsenin doğum günü değil :(";
+    private final String HAPPY_BDAY = ". İyiki doğdun :)";
+    private List<String> config;
 
-    private static SendMessage getMessage(Message argMessage) {
+    public TelegramBdayBotHandler(List<String> argTelegramConfig) {
+        this.INEK_OBASI_BOT = argTelegramConfig.get(0);
+        this.TOKEN_INEK_OBASI_BOT = argTelegramConfig.get(1);
+    }
+
+    /**
+     *
+     * @param argMessage
+     * @return
+     */
+    private SendMessage getMessage(Message argMessage) {
         System.out.println(
                 "first name: " + argMessage.getChat().getFirstName() + " - " +
                         "last name: " + argMessage.getChat().getLastName() + " - " +
@@ -38,7 +49,7 @@ public class TelegramBdayBotHandler extends TelegramLongPollingBot {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(argMessage.getChatId().toString());
 
-        sendMessage.setText(TelegramBdayBotHandler.bdayBotLogic(argMessage));
+        sendMessage.setText(this.bdayBotLogic(argMessage));
         sendMessage.enableMarkdown(true);
         return sendMessage;
     }
@@ -49,7 +60,7 @@ public class TelegramBdayBotHandler extends TelegramLongPollingBot {
      * @author misterbykl
      * @since 1.0.0
      */
-    private static String bdayBotLogic(Message argMessage) {
+    private String bdayBotLogic(Message argMessage) {
         StringBuilder replyTextForList = new StringBuilder();
         String replyText = null;
         Map map = DGList.getDgListesi();
@@ -103,7 +114,7 @@ public class TelegramBdayBotHandler extends TelegramLongPollingBot {
      */
     @Override
     public String getBotToken() {
-        return TelegramBdayBotHandler.TOKEN_INEK_OBASI_BOT;
+        return this.TOKEN_INEK_OBASI_BOT;
     }
 
     /**
@@ -112,7 +123,7 @@ public class TelegramBdayBotHandler extends TelegramLongPollingBot {
      * @since 1.0.0
      */
     public String getBotUsername() {
-        return TelegramBdayBotHandler.INEK_OBASI_BOT;
+        return this.INEK_OBASI_BOT;
     }
 
     /**
@@ -123,7 +134,7 @@ public class TelegramBdayBotHandler extends TelegramLongPollingBot {
      */
     private void handleIncomingMessage(Message argMessage) throws InvalidObjectException {
         try {
-            sendMessage(getMessage(argMessage));
+            sendMessage(this.getMessage(argMessage));
         } catch (TelegramApiException argE) {
             argE.printStackTrace();
         }

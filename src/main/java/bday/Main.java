@@ -16,7 +16,7 @@ import java.util.Properties;
  * <p>
  * <b>created at</b> 29 Mar 2016 13 37
  *
- * @author emreb
+ * @author misterbykl
  * @since 1.0.0
  */
 

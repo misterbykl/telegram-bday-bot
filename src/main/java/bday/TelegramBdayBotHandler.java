@@ -27,7 +27,7 @@ public class TelegramBdayBotHandler extends TelegramLongPollingBot {
     private final String DG_QUERY_HEADER = "/dg";
     private final String DG_TODAY = "/dgbugun";
     private final String DG_NOT_TODAY = "Bugün kimsenin doğum günü değil :(";
-    private final String HAPPY_BDAY = ". İyiki doğdun :)";
+    private final String HAPPY_BDAY = ". İyi ki doğdun :)";
     private List<String> config;
 
     public TelegramBdayBotHandler(List<String> argTelegramConfig) {

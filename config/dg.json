@@ -1,0 +1,11 @@
+{
+  "kisiler": [
+    "Senem","Isil","Sinan","Murat","Emre","Mert","Ersen","Basak","Yusuf","Seda","Caglar","Engin","Nazim"
+  ],
+  "dogum-gunleri-text": [
+    "4 Mayis","30 Mayis","30 Haziran","13 Temmuz","14 Temmuz","20 Temmuz","10 Agustos","30 Agustos","30 Agustos","28 Eylul","4 Kasim","28 Kasim","19 Ekim"
+  ],
+  "dogum-gunleri-date": [
+    "4-5","30-5","30-6","13-7","14-7","20-7","10-8","30-8","30-8","28-9","4-11","28-11","19-10"
+  ]
+}

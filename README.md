@@ -13,4 +13,6 @@ Manage run permissions and simply run the command below
 ```
 $ chmod +x /telegram-bday-bot.sh
 $ ./telegram-bday-bot.sh stop
+
+https://github.com/rubenlagus/TelegramBots
 ```
